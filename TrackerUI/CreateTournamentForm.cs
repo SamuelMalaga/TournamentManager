@@ -97,5 +97,17 @@ namespace TrackerUI
             selectedTeams.Add(model);
             InitializeLists();
         }
+
+        private void removeSelectedPrizeButton_Click(object sender, EventArgs e)
+        {
+            PrizeModel p = (PrizeModel)prizesListBox.SelectedItem;
+
+            if (p != null)
+            {
+                selectedPrizes.Remove(p);
+
+                InitializeLists();
+            }
+        }
     }
 }
