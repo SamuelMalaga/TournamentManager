@@ -34,5 +34,9 @@ namespace TrackerLibrary.Models
         /// </summary>
         /// <value>List of lists</value>
         public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
+        /// <summary>
+        ///    Unique identifier for the tournament
+        /// </summary>
+        public int Id { get; set; }
     }
 }
