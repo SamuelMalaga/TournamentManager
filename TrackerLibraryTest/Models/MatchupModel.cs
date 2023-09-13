@@ -20,5 +20,10 @@ namespace TrackerLibrary.Models
         /// Round number of the match
         /// </summary>
         public int MatchupRound { get; set; }
+        /// <summary>
+        /// Unique identifier of the matchup
+        ///
+        /// </summary>
+        public int Id { get; set; }
     }
 }
